@@ -1,0 +1,22 @@
+@font-face{
+    font-family: ProtoNerd;
+    src:url(/niceFonts/0xProtoNerdFont-Regular.ttf)
+}
+@font-face{
+    font-family: losevka;
+    src:url(/niceFonts/Iosevka-Regular.ttc)
+}
+p{
+    font-family: ProtoNerd;
+}
+*{
+    font-family: ProtoNerd;
+}
+body{
+    background-color: rgb(0, 0, 0);
+    color: green; /*text color*/
+}
+
+span.codelink{
+    background:rgb(27, 1, 1);
+}

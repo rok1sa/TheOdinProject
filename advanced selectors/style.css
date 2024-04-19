@@ -68,3 +68,46 @@ article p::first-line{
     background-color: rebeccapurple;
     border: 1px solid rgb(0, 152, 229);
 }
+
+/*
+ul#summer-drinks li {
+    font-weight: normal;
+    font-size: 1.5rem;
+    color: rgb(0, 255, 191)55, 255, 255);
+}
+*/
+
+/* don't do this ! this doesn't work because simply using the class name by itself has a lower specificity value, so the selectors that are more specific (e.g. using id value) win.*/
+.favorite {
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+}
+
+/*  Sometimes you can just use !important for specificity. */
+/*
+.favorite {
+    color: red !important;
+    font-weight: bold !important;
+}
+*/
+
+/* Be specific! Write like this !!! */
+
+ul#summer-drinks li.favorite {
+    font-weight: bold;
+    color: red;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+ul#summer-drinks li {
+    font-size: 1.6rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* or you could be even more specific. please, don't actually do this. */
+/*
+html body div#pagewrap ul#summer-drinks li.favorite {
+    color: red;
+    font-weight: bold;
+}
+*/

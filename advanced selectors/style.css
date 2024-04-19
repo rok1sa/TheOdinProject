@@ -20,3 +20,51 @@ body{
 span.codelink{
     background:rgb(27, 1, 1);
 }
+
+main div {
+/*Code*/
+}
+
+/* This rule selects only divs with a class of child*/
+main > div{
+    /*Code*/
+}
+/* This rule selects only divs with a class of grand-child*/
+main > div > div {
+    /*Code*/
+}
+
+/* This rule will only select the div with the class of child group2*/
+.group2 + div{
+    /* code*/
+}
+/* This rule will only select the div with the class child group3 */
+.group1 + div + div {
+    /*Code*/
+}
+
+/* This will select all of .group1 siblings (2nd and 3rd .child divs)*/
+.group ~ div{
+    /* Code*/
+}
+
+/* pseudo-class and pseud-element */
+article p:first-child::first-letter {
+    font-size: 190%;
+    font-weight: bold;
+}
+
+/* pseudo-element */
+article p::first-line{
+    color:blueviolet;
+    font-weight:lighter;
+}
+
+.box::before{
+    content: '';
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: rebeccapurple;
+    border: 1px solid rgb(0, 152, 229);
+}

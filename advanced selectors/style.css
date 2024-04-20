@@ -119,3 +119,26 @@ html body div#pagewrap ul#summer-drinks li.favorite {
 .element:fullscreen{
     background-color: lightpink;
 }
+
+.formEmail:focus{
+    background-color: rgb(4, 255, 0);
+
+}
+#emailBtn:active{
+    background-color: rgb(64, 255, 0);
+}
+
+@keyFrames colorChange{
+    0% { background-color: red; }
+    33.33% { background-color: blue; }
+    66.66% { background-color: green; }
+    100% { background-color: red; }
+}
+
+#hover{
+    background-color:blue;   
+}
+
+#hover:hover{
+    animation: colorChange 2s infinite;
+}

@@ -111,3 +111,11 @@ html body div#pagewrap ul#summer-drinks li.favorite {
     font-weight: bold;
 }
 */
+
+.element{
+    background-color: lightyellow;
+}
+
+.element:fullscreen{
+    background-color: lightpink;
+}

@@ -156,3 +156,51 @@ a:link{
 a:visited{
     color:maroon;
 }
+
+/* - :root will override html. being a pseudo class it has a greater specificity than html
+:root{
+    color:red;
+}
+html{
+    color:blue;
+}
+*/
+
+/* Select the first li
+li:nth-child(1) {)
+
+Select every other list item starting with first 
+li:nth-child(odd) { }
+
+Select every 3rd list item starting with first
+li:nth-child(3n - 2) { }
+
+Select every 3rd list item starting with 2nd
+li:nth-child(3n - 1) { }
+
+Select every 3rd child item, as long as it has class "el"
+.el:nth-child(3n) { }
+*/
+
+.module:nth-child(4){
+    margin-right:0;
+}
+
+.myList:nth-child(5) {/* Selects the 5th element with class myList */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+
+}
+
+.myList:nth-child(3n) { /* Selects every 3rd element with class myList */
+    font-size:1.5rem;
+}
+
+.myList:nth-child(3n + 3) { /* Selects every 3rd element with class myList, beginning with the 3rd */}
+
+.myList:nth-child(even) {/* Selects every even element with class myList */
+    color:crimson;
+}
+

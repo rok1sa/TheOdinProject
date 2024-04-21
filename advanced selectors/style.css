@@ -204,3 +204,9 @@ Select every 3rd child item, as long as it has class "el"
     color:crimson;
 }
 
+/* pseudo elements */
+
+<style>
+.emojify::before {
+content: '😎 🥸 🤓';
+}

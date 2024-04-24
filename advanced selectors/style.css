@@ -206,7 +206,43 @@ Select every 3rd child item, as long as it has class "el"
 
 /* pseudo elements */
 
-<style>
-.emojify::before {
-content: '😎 🥸 🤓';
+.exampleOfPE::first-letter{
+    color: orange;
+}
+
+.listDiv{
+    list-style: none;
+    padding-left: 0;
+}
+
+.myList::before{
+    content: '\2022';
+    color: red;
+    margin-right: 0.4rem;
+}
+
+li::marker{
+    color:blue;
+    font-size: 1.5rem;
+}
+
+.emojify::before{
+    content:  '😎 🥸 🤓 ';
+}
+.emojify::after{
+    content: '🤓 🥸 😎';
+}
+
+p::first-line {
+    color: rgb(0, 0, 224);
+    text-transform: uppercase;
+}
+
+button {
+    font-size: 1.2rem;
+    padding: 0.4rem 0.9rem;
+}
+dialog::backdrop{
+    background-color: salmon;
+    background-image:url(wp4789885-phone-hd-2019-wallpapers.jpg)
 }

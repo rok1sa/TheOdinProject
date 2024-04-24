@@ -246,3 +246,80 @@ dialog::backdrop{
     background-color: salmon;
     background-image:url(wp4789885-phone-hd-2019-wallpapers.jpg)
 }
+
+.mTest::marker{
+    content: '✝ ';
+    font-size: 1.2em;
+}
+
+[src]{
+    /* This targets any element that has a src attribute */
+}
+
+img[src]{
+    /* This will only target img elements that have a src attribute*/
+}
+
+img[src='specific.jpg']{
+    /* This will target img elements 
+    with a src attribute that's exactly 'specific.jpg' */
+}
+
+/* 
+
+    [attribute^="value"] - ^= Will match strings from the start.
+    [attribute$="value"] - $= Will match strings from the end.
+    [attribute*="value"] - *= The wildcard selector will match anywhere inside the string.
+
+*/
+
+[class^='aus']{
+    /* Classes are attributes too!
+    This will target any class that begins with 'aus'.
+    */
+}
+
+[src$='.jpg']{
+    /* This will target any src attribute that ends in '.jpg':display:
+    src='puppy.jpg'
+    */
+}
+
+[src*='ill']{
+    /* This targets any attribute that has 'ill' anywhere inside of it:
+    for='bill'
+    for='jill'
+    for='silly'
+    for='ill'
+    */
+}
+/* <a> elements with an href ending ".org", case-insensitive */
+a[href$=".org" i] {
+    font-style: italic;
+}  
+/* <a> elements whose class attribute contains the word "logo" */
+a[class~="logo"] {
+    padding: 2px;
+}
+a[href^="#"] {
+    background-color: silver;
+}
+
+/* All divs without a 'lang' attribute are italicized */
+div:not([lang]){
+    font-style: italic;
+}
+/* All divs in US English are blue */
+div[lang~='en-us']{
+    color: blue;
+}
+/* All divs in Italian are green */
+div[lang='it']{
+    color:green
+}
+div[lang|="zh"] {
+    color: red;
+}
+div[data-lang="zh-Hant-TW"] {
+    color: purple;
+}

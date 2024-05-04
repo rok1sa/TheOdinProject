@@ -36,6 +36,10 @@
         <li><a href="#.mp4">Video File</a></li>
     </ul>
 
+    <!--nmc-->>
+    <a href="http://google.com/">Search the Web</a>
+    <a href="http://learn.shayhowe.com/">Learn How to Build Websites</a>
+
     <style>
         /*NMC*/
         input {
@@ -138,6 +142,17 @@
 
         a[href$=".mp4"] {
             background-image: url("images/video.png");
+        }
+        a:after {
+            color: #9799a7;
+            content: ' ('attr(href)')';
+            font-size: 11px;
+        }
+        p::-moz-selection {
+            color: red;
+        }
+        p::selection {
+            color: red;
         }
     </style>
 

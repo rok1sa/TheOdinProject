@@ -371,3 +371,9 @@ table {
   tr:last-child td:last-child {
     border-bottom-right-radius: 6px;
   }
+p::-moz-selection {
+    color: red;
+}
+p::selection {
+    color: red;
+}

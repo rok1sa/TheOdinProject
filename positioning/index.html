@@ -7,20 +7,37 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 id="staticVsRelative">Static vs Relative</h1>
+    <h1 id="static-vs-relative">Static vs Relative</h1>
 
-    <div id="parentContainer">
-        <p id="staticRelativeDescription">
+    <div id="static-relative-div">
+        <p id="static-rel-p">
             Static positioning: Element remains in its default position in the document flow.<br><br>
             Relative positioning: Element can be shifted from its default position without affecting the layout of other elements.
         </p>
     </div>
     
-    <div id="staticDiv">Static Position</div>
-    
-    <div id="relativeDiv">Relative Position</div>
+    <div id="static-div">Static Position</div>
 
+    <div id="relative-div">Relative Position</div>
 
+    <h1 id="absolute-positioning">Absolute Positioning</h1>
+    <p id="absolute-pos">Absolute positioning allows you to place an element precisely on the screen without affecting other elements. It removes the element from the normal document flow and positions it relative to an ancestor element. This means the element won't affect or be affected by other elements. You can use the `top`, `right`, `bottom`, and `left` properties to position the element anywhere on the screen. It's handy for things like modals, image captions, or placing icons on top of other elements.
+    <br><br>  Disclaimer: absolute positioning has very specific use cases and if possible, using flexbox or grid should be prioritized. Absolute positioning shouldn’t be used to do entire page layouts.
+    </p>
+    <div id="absolute-div">Absolute Div</div>
 
+    <h1 id="fixed-positioning-h1">Fixed Positioning</h1>
+    <p id="fixed-positioning-text">Fixed positioning allows you to stick an element to a specific spot on the screen, even when the user scrolls. It's like pinning something in place on your screen so it's always visible. You can use properties like `top`, `right`, `bottom`, and `left` to decide where exactly on the screen the element should be. This is handy for things like keeping a navigation bar or a chat button visible at all times while the user scrolls through a webpage.</p>
+    <button id="fixedBtn" class="btn">Fixed Button</button>
+
+    <h1 id="sticky-pos">Sticky Positioning</h1>
+    <br>
+    <p id="sticky-pos-p">Sticky elements behave like normal elements until you scroll past them, at which point they start behaving like fixed elements. Unlike fixed elements, sticky elements are not taken out of the normal flow of the document. An example of sticky positioning can help clarify this concept. Sticky positioning is commonly used for section headings, allowing users to see which category they are viewing while scrolling through a webpage. For instance, in an online shop, sticky positioning can ensure that the category label remains visible as users browse through different sections.</p>
+
+    <p id="sticky">Hey, I am <strong>STICKY!</strong></p>
+
+    <p id="show-sticky">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias, magnam nemo! Est blanditiis nesciunt doloribus quod non dolorum reprehenderit totam cumque facilis consectetur, magnam necessitatibus ab! Minima exercitationem quisquam autem?</p>
+
+    <script src="script.js"></script>
 </body>
 </html>

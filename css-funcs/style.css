@@ -50,7 +50,8 @@ h1{
 }
 
 p{
-	width: clamp(45ch, 50%, 75ch)
+	width: clamp(45ch, 50%, 75ch);
+	font-size: clamp(1.5rem, 5vw, 3rem);
 }
 
 header{
@@ -59,4 +60,11 @@ header{
 	
 	background: lightpink;
 	padding: var(--blockPadding) max(2rem, 50vw - var(--contentWidth) / 2);
+}
+
+property{
+	width: clamp();
+	width: max();
+	width: min();
+	width: calc();
 }

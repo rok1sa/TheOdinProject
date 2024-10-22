@@ -10,6 +10,7 @@ body {
     flex-direction: row;
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
 }
 
 .left {
@@ -96,7 +97,7 @@ button[type='submit'] {
 }
 
 a {
-    color: rgb(139, 139, 139);
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .for-image {
@@ -117,4 +118,13 @@ a {
 
 .green-link {
     color: rgb(89, 109, 72); /*comment*/
+}
+
+@media (max-width: 600px){
+    .right {
+        display: none;
+    }
+    .left {
+        width: 100%;
+    }
 }

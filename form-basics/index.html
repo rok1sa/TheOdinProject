@@ -113,7 +113,7 @@
     <fieldset>
         <label for="first_name">First Name</label>
         <input type="text" id="first_name" name="first_name">
-    
+        <br>
         <label for="last_name">Last Name</label>
         <input type="text" id="last_name" name="last_name">
     </fieldset>
@@ -124,9 +124,13 @@
     
         <label for="name">Name:</label>
         <input type="text" id="name" name="name">
+
+        <br>
     
         <label for="phone_number">Phone Number:</label>
         <input type="tel" id="phone_number" name="phone_number">
+
+        <br>
     
         <label for="email">Email:</label>
         <input type="email" id="email" name="email">
@@ -328,8 +332,163 @@
                 </li>
             </ul>
         </form>
-
+        <br>
         
+        <form>
+            <p>
+                <label for="search">search: </label>
+                <input id="search" name="search" type="search" />
+            </p>
+            <p>
+                <label for="text">text: </label>
+                <input id="text" name="text" type="text" />
+            </p>
+            <p>
+                <label for="date">date: </label>
+                <input id="date" name="date" type="datetime-local" />
+            </p>
+            <p>
+                <label for="radio">radio: </label>
+                <input id="radio" name="radio" type="radio" />
+            </p>
+            <p>
+                <label for="checkbox">checkbox: </label>
+                <input id="checkbox" name="checkbox" type="checkbox" />
+            </p>
+            <p><input type="submit" value="submit" /></p>
+            <p><input type="button" value="button" /></p>
+        </form>
+
+        <br>
+
+        <label><span><input type="checkbox" name="q5" value="true" /></span> True</label>
+        <label><span><input type="checkbox" name="q5" value="false" /></span> False</label>
+
+        <br>
+
+        <form>
+            <fieldset>
+                <legend>Fruit preferences</legend>
+        
+                <p>
+                    <label>
+                        <input type="checkbox" name="fruit" value="cherry" />
+                        I like cherry
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input type="checkbox" name="fruit" value="banana" disabled />
+                        I can't like banana
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input type="checkbox" name="fruit" value="strawberry" />
+                        I like strawberry
+                    </label>
+                </p>
+            </fieldset>z
+        </form>
+
+        <label for="select">Select fruits</label>
+        <select id="select" name="select" multiple>
+            <option name="banana">banana</option>
+        </select>
+        
+        <br>
+
+        <form>
+            <label for="file-test">Choose file</label>
+            <input type="file" id="file-test">
+        </form>
+
+        <br>
+
+        <form>
+            <fieldset>
+                <legend>Feedback form</legend>
+                <div>
+                    <label for="fname">First name: </label>
+                    <input id="fname" name="fname" type="text" required />
+                </div>
+                <div>
+                    <label for="lname">Last name: </label>
+                    <input id="lname" name="lname" type="text" required />
+                </div>
+                <div>
+                    <label for="email">
+                        Email address (include if you want a response):
+                    </label>
+                    <input id="email" name="email" type="email" />
+                </div>
+                <div><button>Submit</button></div>
+            </fieldset>
+        </form>
+        
+        <br>
+
+        <form>
+            <fieldset>
+                <legend>Feedback form</legend>
+        
+                <p>Required fields are labeled with "required".</p>
+                <div>
+                    <label for="fname">First name: </label>
+                    <input id="fname" name="fname" type="text" required />
+                    <span></span>
+                </div>
+            </fieldset>
+        </form>
+
+        <br>
+
+        <form>
+            <fieldset id="shipping">
+                <legend>Shipping address</legend>
+                <div>
+                    <label for="name1">Name: </label>
+                    <input id="name1" name="name1" type="text" required />
+                </div>
+                <div>
+                    <label for="address1">Address: </label>
+                    <input id="address1" name="address1" type="text" required />
+                </div>
+                <div>
+                    <label for="pcode1">Zip/postal code: </label>
+                    <input id="pcode1" name="pcode1" type="text" required />
+                </div>
+            </fieldset>
+            <fieldset id="billing">
+                <legend>Billing address</legend>
+                <div>
+                    <label for="billing-checkbox">Same as shipping address:</label>
+                    <input type="checkbox" id="billing-checkbox" checked />
+                </div>
+                <div>
+                    <label for="name" class="billing-label disabled-label">Name: </label>
+                    <input id="name" name="name" type="text" disabled required />
+                </div>
+                <div>
+                    <label for="address2" class="billing-label disabled-label">
+                        Address:
+                    </label>
+                    <input id="address2" name="address2" type="text" disabled required />
+                </div>
+                <div>
+                    <label for="pcode2" class="billing-label disabled-label">
+                        Zip/postal code:
+                    </label>
+                    <input id="pcode2" name="pcode2" type="text" disabled required />
+                </div>
+            </fieldset>
+        
+            <div><button>Submit</button></div>
+        </form>
+
+        <br>
+
+        <hr>
 
     <script src="script.js"></script>
 </body>
